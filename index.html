@@ -206,8 +206,16 @@
                   </section>
                      <div id="azimuthBuyWithCrypto">
 
-                         <script type="text/javascript" "azimuthBuyWithCrypto.js"></script>
-
+                         <script type="text/javascript" src="https://azimuth-services.io/azimutBuyWithCrypto/someid">
+                              AzimuthBuyWithCrypto.init({
+                                      onPaymentSuccessCallback: function logger(e) {
+                                          console.log('Payment succeeded with function param inside JavaScript!!', e);
+                                      },
+                                      {customClass: 'azimuthBuyWithCryptoClass' }
+                                                        });
+                   
+                            
+                            </script>
                      </div>
                   <section class="css-0">
                      <div class="chakra-container css-97qci7">
