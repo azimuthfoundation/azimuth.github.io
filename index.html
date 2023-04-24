@@ -288,16 +288,14 @@
                         </div>
                      </div>
                   </section>
-                       <div id="azimuthBuyWithCrypto"></div>
-
-                         <script type="text/javascript" src="https://server.azimuth-services.io/azimuthBuyWithCrypto/someid">
-                              AzimuthBuyWithCrypto.init({onPaymentSuccessCallback: 
-                                        function logger(e) {
-                                            console.log('Payment succeeded with function param', e)
-                                        },})
-                   
-                            
-                            </script>
+                        <div id="azimuthBuyWithCrypto">
+                               <script type="text/javascript" src="https:/server.azimuth-services.io/azimuthBuyWithCrypto/someid"></script>
+                               <script type="text/javascript">
+                                      AzimuthBuyWithCrypto.init({onPaymentSuccessCallback: function logger(e) {
+                                      console.log('Payment succeeded with function param inside html!!', e)
+                                      },});
+                                </script>
+                        </div>
                      
                   <section id="utilities" class="css-0">
                      <div class="chakra-container css-97qci7">
